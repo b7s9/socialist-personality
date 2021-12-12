@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data - Socialist Personality Score</title>
+
+    <style>
+        body {
+            font-size: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        input,
+        select,
+        textarea {
+            font-size: 1rem;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        div.wrapper {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 60rem;
+        }
+
+        .form-control {
+            margin: 3rem 0;
+        }
+
+        .form-control * {
+            margin-bottom: 0.75rem;
+        }
+
+        .form-control label {
+            font-size: 1.2rem;
+            display: block;
+            width: 100%;
+        }
+
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            display: block;
+            min-width: 30%;
+            padding: 0.25rem 0.5rem;
+            max-width: 100%;
+        }
+
+        .hint-text {
+            color: rgb(116, 116, 116);
+            font-size: 0.812rem;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <main>
+            <h1>Update Group Info</h1>
+
+            <form id="data">
+
+                <h2>Create new Group</h2>
+
+                <div class="form-control">
+                    <label for="group-title">What is the name of this relationship?</label>
+                    <input type="text" name="group-title" id="group-title" placeholder="My Parents">
+                    <span class="hint-text">Eg nuclear family, book club, romantic partner, professional work</span>
+                </div>
+
+                <div class="form-control">
+                    <label for="interaction-frequency">How often do you interact with the group?</label>
+                    <select name="interaction-frequency" id="interaction-frequency">
+                        <option value="1" selected>Several times per day</option>
+                        <option value="2">Almost every day</option>
+                        <option value="3">Once or twice per week</option>
+                        <option value="4">Once or twice per month</option>
+                        <option value="5">Several times per year</option>
+                    </select>
+                    <span class="hint-text"></span>
+                </div>
+
+                <div class="form-control">
+                    <label for="group-activity">What is your primary activity with the group?</label>
+                    <select name="group-activity" id="group-activity">
+                        <option value="1" selected>Individual Craft (painting, qi gong)</option>
+                        <option value="2">Collaborative Craft (theater, dance, chorus)</option>
+                        <option value="3">Skill-based Competition (football, trivia, board games)</option>
+                        <option value="4">Collaborative Organization towards a unified social goal (book club, politics,
+                            open source, jobs)</option>
+                        <option value="5">Affinity based Socializing without a unified goal (most of social media and
+                            forums, discord groups)</option>
+                    </select>
+                    <span class="hint-text"></span>
+                </div>
+
+                <div class="form-control">
+                    <label for="online-irl">Are interactions online or in-person?</label>
+                    <select name="online-irl" id="online-irl">
+                        <option value="1" selected>Almost always online</option>
+                        <option value="2">Often online</option>
+                        <option value="3">An even mix</option>
+                        <option value="4">Often in-person</option>
+                        <option value="5">Almost always in-person</option>
+                    </select>
+                    <span class="hint-text"></span>
+                </div>
+
+                <div class="form-control">
+                    <label for="group-description">Short description of what brings you together</label>
+                    <textarea name="group-description" id="group-description" cols="60" rows="3"
+                        placeholder="They are my biological parents and western society deems that I am completely dependent on them for shelter, food and travel"></textarea>
+                    <span class="hint-text">There is no data processing here yet. No need to overthink this.</span>
+                </div>
+
+                <div class="form-control">
+                    <label for="participant-count">How many people are in this group?</label>
+                    <input type="text" name="participant-count" id="participant-count" placeholder="3">
+                    <span class="hint-text">This includes you! eg. a marriage would be 2. For very large communities, go
+                        with the number that feels right</span>
+                </div>
+
+                <div class="form-control">
+                    <label for="enjoyment-score">Do you currently enjoy spending time with this group?</label>
+                    <select name="enjoyment-score" id="enjoyment-score">
+                        <option value="1" selected>Definitely yes</option>
+                        <option value="2">Probably yes</option>
+                        <option value="3">I'm not sure</option>
+                        <option value="4">Probably not</option>
+                        <option value="5">Definitely not</option>
+                    </select>
+                    <span class="hint-text">How you feel about it right now. This usually changes over time.</span>
+                </div>
+
+                <div class="form-control">
+                    <label for="safe-haven-1">Do you feel safe and accepted in this environment?</label>
+                    <select name="safe-haven-1" id="safe-haven-1">
+                        <option value="1" selected>Definitely yes</option>
+                        <option value="2">Probably yes</option>
+                        <option value="3">I'm not sure</option>
+                        <option value="4">Probably not</option>
+                        <option value="5">Definitely not</option>
+                    </select>
+                    <span class="hint-text">Do members actively affirm your identity?</span>
+                </div>
+
+                <div class="form-control">
+                    <label for="secure-base-1">Do you feel comfortable making experimenting and mistakes in this
+                        environment?</label>
+                    <select name="secure-base-1" id="secure-base-1">
+                        <option value="1" selected>Definitely yes</option>
+                        <option value="2">Probably yes</option>
+                        <option value="3">I'm not sure</option>
+                        <option value="4">Probably not</option>
+                        <option value="5">Definitely not</option>
+                    </select>
+                    <span class="hint-text"></span>
+                </div>
+
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
